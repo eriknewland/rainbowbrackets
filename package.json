@@ -1,0 +1,27 @@
+{
+  "name": "rainbowbrackets",
+  "version": "1.0.1",
+  "description": "colorizes brackets, parentheses and braces to help track scope",
+  "main": "rainbowBrackets.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/eriknewland/rainbowbrackets.git"
+  },
+  "keywords": [
+    "rainbowbrackets",
+    "codemirror",
+    "codemirror6"
+  ],
+  "author": "Erik Newland",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/eriknewland/rainbowbrackets/issues"
+  },
+  "homepage": "https://github.com/eriknewland/rainbowbrackets#readme",
+  "dependencies": {
+    "@codemirror/view": "^6.9.5"
+  }
+}

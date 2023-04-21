@@ -50,7 +50,7 @@ Live Implementation:
 
 Depending on your theme and extensions, the rainbowBrackets may not apply correctly as the span structure looks something like this, where the color of the inner span will override the rainbow-bracket. Investigate with Chrome Dev Tools if you're encountering a bug.
 
->Fixed as of 2.0.0. See updated API Reference.
+>Nearly Fixed as of 2.0.0. See updated API Reference.
 
 ```javascript
 <span class="rainbow-bracket-orange">

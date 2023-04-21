@@ -1,8 +1,8 @@
 {
   "name": "rainbowbrackets",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "description": "colorizes brackets, parentheses and braces to help track scope",
-  "main": "dist/rainbowBrackets.min.js",
+  "main": "rainbowBrackets.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "webpack"
@@ -24,10 +24,5 @@
   "homepage": "https://github.com/eriknewland/rainbowbrackets#readme",
   "dependencies": {
     "@codemirror/view": "^6.9.5"
-  },
-  "devDependencies": {
-    "terser-webpack-plugin": "^5.3.7",
-    "webpack": "^5.80.0",
-    "webpack-cli": "^5.0.1"
   }
 }

@@ -1,6 +1,6 @@
 {
   "name": "rainbowbrackets",
-  "version": "1.0.1",
+  "version": "2.0.0",
   "description": "colorizes brackets, parentheses and braces to help track scope",
   "main": "rainbowBrackets.js",
   "scripts": {

@@ -50,6 +50,8 @@ Live Implementation:
 
 Depending on your theme and extensions, the rainbowBrackets may not apply correctly as the span structure looks something like this, where the color of the inner span will override the rainbow-bracket. Investigate with Chrome Dev Tools if you're encountering a bug.
 
+>Fixed as of 2.0.0. See updated API Reference.
+
 ```javascript
 <span class="rainbow-bracket-orange">
   <span class="ͼ5k">{</span> //opening bracket displaying theme color
@@ -66,11 +68,9 @@ To work around this, we can add the following CSS.
   color: orange;
 }
 
-
 .rainbow-bracket-yellow > span {
   color: yellow;
 }
-
 
 .rainbow-bracket-green > span {
   color: green;
@@ -115,9 +115,9 @@ coming soon...handle as you would an existing extension
 ## API Reference
 
 #### Class Structure
+##### 1.0.1
 
-
-```js
+```javascript
 .rainbow-bracket-red {color: 'red'}
 .rainbow-bracket-orange {color: 'orange'}
 .rainbow-bracket-yellow {color: 'yellow'}
@@ -126,6 +126,25 @@ coming soon...handle as you would an existing extension
 .rainbow-bracket-indigo {color: 'indigo'}
 .rainbow-bracket-violet {color: 'violet'}
 ```
+
+##### 2.0.0
+```javascript
+.rainbow-bracket-red: { color: 'red' }
+.rainbow-bracket-red > span: { color: 'red' }
+.rainbow-bracket-orange: { color: 'orange' }
+.rainbow-bracket-orange > span: { color: 'orange' }
+.rainbow-bracket-yellow: { color: 'yellow' }
+.rainbow-bracket-yellow > span: { color: 'yellow' }
+.rainbow-bracket-green: { color: 'green' }
+.rainbow-bracket-green > span: { color: 'green' }
+.rainbow-bracket-blue: { color: 'blue' }
+.rainbow-bracket-blue > span: { color: 'blue' }
+.rainbow-bracket-indigo: { color: 'indigo' }
+.rainbow-bracket-indigo > span: { color: 'indigo' }
+.rainbow-bracket-violet: { color: 'violet' }
+.rainbow-bracket-violet > span: { color: 'violet' }
+```
+
 ## Development
 
 git fork, clone, then navigate into this repository.
@@ -133,8 +152,10 @@ git fork, clone, then navigate into this repository.
 Install dependencies:
 
 ```bash
-  npm i
+  npm install
 ```
+
+See [Contributing](#contributing). TLDR: Make a branch with your feature name/bug fix, include detailed commit log and PR message.
 
 ## Roadmap
 
@@ -148,11 +169,16 @@ Yes! Although it's likely there are unknown bugs I have yet to encounter.
 
 #### Can I change the colors?
 
-Yes! See the API reference above. If you wished to change red to pink, simply use a little CSS:
+Yes! See the API reference above. If you want to change red to pink, simply use a little CSS:
 ```css
 .rainbow-bracket-red {
     color: pink;
 }
+/* Override may be neccessary as well*/
+.rainbow-bracket-red > span {
+    color: pink;
+}
+
 ```
 I'll rename these classes if enough people want color flexibility to something more intuitive.
 

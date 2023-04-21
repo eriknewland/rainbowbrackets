@@ -63,12 +63,19 @@ export default function rainbowBrackets() {
     rainbowBracketsPlugin,
     EditorView.baseTheme({
       '.rainbow-bracket-red': { color: 'red' },
+      '.rainbow-bracket-red > span': { color: 'red' },
       '.rainbow-bracket-orange': { color: 'orange' },
+      '.rainbow-bracket-orange > span': { color: 'orange' },
       '.rainbow-bracket-yellow': { color: 'yellow' },
+      '.rainbow-bracket-yellow > span': { color: 'yellow' },
       '.rainbow-bracket-green': { color: 'green' },
+      '.rainbow-bracket-green > span': { color: 'green' },
       '.rainbow-bracket-blue': { color: 'blue' },
+      '.rainbow-bracket-blue > span': { color: 'blue' },
       '.rainbow-bracket-indigo': { color: 'indigo' },
+      '.rainbow-bracket-indigo > span': { color: 'indigo' },
       '.rainbow-bracket-violet': { color: 'violet' },
+      '.rainbow-bracket-violet > span': { color: 'violet' },
     }),
   ];
 }
